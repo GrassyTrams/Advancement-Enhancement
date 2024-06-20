@@ -1,0 +1,26 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:anvil"
+		},
+		"title": {"translate":"Heavy Metal"},
+		"description": {"color":"aqua","translate":"Craft an Anvil"},
+		"announce_to_chat": "true",
+		"frame": "goal"
+	},
+	"parent": "minecraft:story/smelt_iron",		
+	"criteria": {
+		"anvil": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"minecraft:anvil"
+						]
+					}
+				]
+			}
+		}
+	}
+}

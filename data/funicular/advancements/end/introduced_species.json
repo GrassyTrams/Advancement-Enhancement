@@ -1,0 +1,31 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:chorus_flower"
+		},
+		"title": {"translate":"Introduced Species"},
+		"description": {"color":"green","translate":"Plant a chorus plant in the overworld"},
+		"announce_to_chat": "true"
+	},
+	"parent": "minecraft:end/enter_end_gateway",		
+	"criteria": {
+		"chorus_flower": {
+			"trigger": "minecraft:placed_block",
+			"conditions": {
+				"location": [
+					{
+						"condition": "minecraft:location_check",
+						"predicate": {
+							"block": {
+								"blocks": [
+									"minecraft:chorus_flower"
+								]
+							},
+							"dimension": "overworld"
+						}
+					}
+				]
+			}
+		}
+	}
+}

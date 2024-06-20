@@ -1,0 +1,37 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:heart_of_the_sea"
+		},
+		"title": {"translate":"Moskstraumen"},
+		"description": {"color":"aqua","translate":"Construct a Conduit in the ocean"},
+		"announce_to_chat": "true",
+		"frame": "goal"
+	},
+	"parent": "funicular:adventure/the_deep_end",
+	"criteria": {
+		"conduit_power": {
+			"trigger": "minecraft:effects_changed",
+			"conditions": {
+				"effects": {
+					"minecraft:conduit_power": {}
+				},
+				"player": [
+					{
+						"condition": "minecraft:inverted",
+						"term": {
+							"condition": "minecraft:entity_properties",
+							"entity": "this",
+							"predicate": {
+								"type_specific": {
+									"type": "player",
+									"gamemode": "spectator"
+								}
+							}
+						}
+					}
+				]
+			}
+		}
+	}
+}

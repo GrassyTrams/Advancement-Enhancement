@@ -1,0 +1,25 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:pumpkin_pie"
+		},
+		"title": {"translate":"I Baked You a Pie!"},
+		"description": {"translate":"Bake a pumpkin pie"},
+		"announce_to_chat": "true"
+	},
+	"parent": "funicular:husbandry/cookie",		
+	"criteria": {
+		"pumpkin_pie": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"minecraft:pumpkin_pie"
+						]
+					}
+				]
+			}
+		}
+	}
+}

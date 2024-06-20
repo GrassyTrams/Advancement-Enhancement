@@ -1,0 +1,28 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:apple"
+		},
+		"title": {"translate":"Artificial Selection"},
+		"description": {"color":"aqua","translate":"Breed a horse and a donkey to get a mule"},
+		"announce_to_chat": "true",
+		"frame": "goal"
+	},
+	"parent": "funicular:friends/saddle_up",		
+	"criteria": {
+		"mule": {
+			"trigger": "minecraft:bred_animals",
+			"conditions": {
+				"parent": {
+					"type": "minecraft:horse"
+				},
+				"partner": {
+					"type": "minecraft:donkey"
+				},
+				"child": {
+					"type": "minecraft:mule"
+				}
+			}
+		}
+	}
+}

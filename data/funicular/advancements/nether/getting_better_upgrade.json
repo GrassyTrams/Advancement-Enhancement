@@ -1,0 +1,135 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:netherite_pickaxe"
+		},
+		"title": {"translate":"Getting a Better Upgrade"},
+		"description": {"color":"aqua","translate":"Use a smithing table to upgrade a tool or armor piece"},
+		"announce_to_chat": "true",
+		"frame": "goal"
+	},
+	"parent": "funicular:nether/netherite_upgrader",		
+	"criteria": {
+		"netherite_pickaxe": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"minecraft:netherite_pickaxe"
+						]
+					}
+				]
+			}
+		},
+		"netherite_axe": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"minecraft:netherite_axe"
+						]
+					}
+				]
+			}
+		},
+		"netherite_shovel": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"minecraft:netherite_shovel"
+						]
+					}
+				]
+			}
+		},
+		"netherite_hoe": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"minecraft:netherite_hoe"
+						]
+					}
+				]
+			}
+		},
+		"netherite_helmet": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"minecraft:netherite_helmet"
+						]
+					}
+				]
+			}
+		},
+		"netherite_chestplate": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"minecraft:netherite_chestplate"
+						]
+					}
+				]
+			}
+		},
+		"netherite_leggings": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"minecraft:netherite_leggings"
+						]
+					}
+				]
+			}
+		},
+		"netherite_boots": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"minecraft:netherite_boots"
+						]
+					}
+				]
+			}
+		},
+		"netherite_sword": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"minecraft:netherite_sword"
+						]
+					}
+				]
+			}
+		}
+	},
+	"requirements": [
+		[
+		"netherite_sword",
+		"netherite_helmet",
+		"netherite_chestplate",
+		"netherite_leggings",
+		"netherite_shovel",
+		"netherite_boots",
+		"netherite_pickaxe",
+		"netherite_axe",
+		"netherite_hoe"
+		]
+	]
+}

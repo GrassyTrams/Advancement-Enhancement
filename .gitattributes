@@ -1,2 +1,4 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+* text=auto eol=lf
+/**/*.gz linguist-generated=true
+/**/*.msgpack linguist-generated=true
+/**/*.min.json linguist-generated=true

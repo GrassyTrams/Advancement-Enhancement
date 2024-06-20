@@ -1,0 +1,42 @@
+{
+  "parent": "funicular:story/pearl",
+  "criteria": {
+    "in_stronghold": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "structure": "minecraft:stronghold"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:location"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "Find the Stronghold"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "minecraft:mossy_stone_bricks"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "Dungeons and..."
+    }
+  },
+  "requirements": [
+    [
+      "in_stronghold"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

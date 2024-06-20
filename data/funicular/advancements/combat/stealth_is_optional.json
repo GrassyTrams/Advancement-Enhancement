@@ -1,0 +1,23 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:sculk_shrieker"
+		},
+		"title": {"translate":"Stealth Is Optional"},
+		"description": {"translate":"Kill the Warden"},
+		"announce_to_chat": "true",
+		"frame": "challenge",
+		"hidden": "true"
+	},
+	"parent": "funicular:combat/kill_mob_near_sculk_catalyst",	
+	"criteria": {
+		"warden": {
+			"trigger": "minecraft:player_killed_entity",
+			"conditions": {
+				"entity": {
+					"type": "warden"
+				}
+			}
+		}
+	}
+}

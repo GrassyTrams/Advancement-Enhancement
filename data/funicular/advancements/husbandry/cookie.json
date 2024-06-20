@@ -1,0 +1,23 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:cookie"
+		},
+		"title": {"translate":"Home Baked"},
+		"description": {"translate":"Bake some cookies"},
+		"announce_to_chat": "true"
+	},
+	"parent": "funicular:husbandry/bake_bread",		
+	"criteria": {
+		"cookie": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"items": [
+						"minecraft:cookie"
+					]
+				}
+			}
+		}
+	}
+}

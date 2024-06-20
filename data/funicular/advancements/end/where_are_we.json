@@ -1,0 +1,35 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:emerald"
+		},
+		"title": {"translate":"Where Are We?"},
+		"description": {"translate":"Defend a village from a raid in the end."},
+		"announce_to_chat": "true",
+		"frame": "challenge",
+		"hidden": true
+	},
+	"parent": "minecraft:end/kill_dragon",	
+	"criteria": {
+		"start_raid_end": {
+			"trigger": "minecraft:voluntary_exile",
+			"conditions": {
+				"player":  {
+					"location": {
+						"dimension": "the_end"
+					}
+				}
+			}
+		},	
+		"defend_raid_end": {
+			"trigger": "minecraft:hero_of_the_village",
+			"conditions": {
+				"player":  {
+					"location": {
+						"dimension": "the_end"
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,26 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:ender_eye"
+		},
+		"title": {"translate":"Eye Spy"},
+		"description": {"translate":"Craft an Eye of Ender using an Ender Pearl and Blaze Rod Powder"},
+		"announce_to_chat": "true",
+		"frame": "task"
+	},
+	"parent": "minecraft:story/enter_the_nether",		
+	"criteria": {
+		"ender_eye": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [
+							"minecraft:ender_eye"
+						]
+					}
+				]
+			}
+		}
+	}
+}

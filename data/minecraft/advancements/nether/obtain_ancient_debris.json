@@ -1,0 +1,56 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:ancient_debris"
+		},
+		"title": {"translate":"Hidden in the Depths"},
+		"description": {"translate":"Obtain Ancient Debris"},
+		"announce_to_chat": "true"
+	},
+	"parent": "minecraft:nether/loot_bastion",	
+	"criteria": {
+		"ancient_debris": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [ 
+							"minecraft:ancient_debris"
+						]
+					}
+				]
+			}
+		},
+		"netherite_scrap": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [ 
+							"minecraft:netherite_scrap"
+						]
+					}
+				]
+			}
+		},
+		"netherite_ingot": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"items": [ 
+							"minecraft:netherite_ingot"
+						]
+					}
+				]
+			}
+		}
+	},
+	"requirements": [
+		[
+		"ancient_debris",
+		"netherite_scrap",
+		"netherite_ingot"
+		]
+	]
+}

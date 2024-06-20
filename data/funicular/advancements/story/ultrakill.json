@@ -1,0 +1,34 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:netherite_axe"
+		},
+		"title": {"translate":"Ultrakill"},
+		"description": {"translate":"Deal more than sixteen hearts of damage in a single melee blow"},
+		"announce_to_chat": "true",
+		"frame": "challenge",
+		"hidden": true
+	},
+	"parent": "funicular:story/overkill",	
+	"criteria": {
+		"overkill": {
+			"trigger": "minecraft:player_hurt_entity",
+			"conditions": {
+				"damage": {
+					"dealt": {
+						"min": 32.0,
+						"max": 999.0
+					},
+					"type": {
+						"tags": [
+							{
+								"id": "minecraft:player_attack",
+								"expected": true
+							}
+						]
+					}
+				}
+			}
+		}
+	}
+}

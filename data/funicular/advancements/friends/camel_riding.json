@@ -1,0 +1,22 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:cactus"
+		},
+		"title": {"translate":"From Mali to Egypt"},
+		"description": {"translate":"Ride a Camel"},
+		"announce_to_chat": "true"
+	},
+	"parent": "funicular:friends/saddle_up",		
+	"criteria": {
+		"tamed_animal": {
+			"trigger": "minecraft:started_riding",
+			"condition": "minecraft:entity_properties",
+			"predicate": {
+				"vehicle": {
+					"type": "minecraft:camel"
+				}
+			}
+		}
+	}
+}

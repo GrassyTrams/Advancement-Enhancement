@@ -1,0 +1,33 @@
+{
+  "parent": "funicular:villagers/summon_iron_golem",
+  "criteria": {
+    "hero_of_the_village": {
+      "conditions": {},
+      "trigger": "minecraft:hero_of_the_village"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.adventure.hero_of_the_village.description"
+    },
+    "frame": "challenge",
+    "hidden": true,
+    "icon": {
+      "item": "minecraft:bell"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.adventure.hero_of_the_village.title"
+    }
+  },
+  "requirements": [
+    [
+      "hero_of_the_village"
+    ]
+  ],
+  "rewards": {
+    "experience": 100
+  },
+  "sends_telemetry_event": true
+}
