@@ -4,7 +4,7 @@
       "id": "minecraft:anvil"
     },
     "title": "Heavy Metal",
-    "description": "Obtain an Avil",
+    "description": "Obtain an Anvil",
     "frame": "goal"
   },
   "parent": "minecraft:story/smelt_iron",
