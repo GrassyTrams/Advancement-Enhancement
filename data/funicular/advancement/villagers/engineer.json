@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:iron_ingot"
+    },
+    "title": "Meet the Engineer",
+    "description": "Use an Iron Ingot to repair a damaged Iron Golem",
+    "frame": "task"
+  },
+  "parent": "minecraft:adventure/summon_iron_golem",
+  "criteria": {
+    "iron_golem": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:iron_ingot"
+          ]
+        },
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:iron_golem"
+            }
+          }
+        ]
+      }
+    }
+  }
+}

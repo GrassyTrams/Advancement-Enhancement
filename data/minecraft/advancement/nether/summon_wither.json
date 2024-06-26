@@ -1,0 +1,38 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:soul_sand",
+      "count": 1
+    },
+    "title": {
+      "translate": "advancements.nether.summon_wither.title"
+    },
+    "description": {
+      "translate": "advancements.nether.summon_wither.description"
+    },
+    "frame": "goal"
+  },
+  "parent": "minecraft:nether/get_wither_skull",
+  "criteria": {
+    "summoned": {
+      "trigger": "minecraft:summoned_entity",
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:wither"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "summoned"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

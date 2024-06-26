@@ -1,0 +1,21 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:emerald_block"
+    },
+    "title": "Stonks",
+    "description": "Trade with a villager at master level",
+    "frame": "challenge"
+  },
+  "parent": "funicular:villagers/freq_trade",
+  "criteria": {
+    "master": {
+      "trigger": "minecraft:villager_trade",
+      "conditions": {
+        "villager": {
+          "nbt": "{VillagerData:{level:5}}"
+        }
+      }
+    }
+  }
+}

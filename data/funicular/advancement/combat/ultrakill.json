@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:netherite_axe"
+    },
+    "title": "Over-Overkill",
+    "description": "Deal more than sixteen hearts of damage in a single melee blow",
+    "frame": "challenge"
+  },
+  "parent": "funicular:combat/overkill",
+  "criteria": {
+    "overkill": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": [],
+        "damage": {
+          "dealt": {
+            "min": 32,
+            "max": 999
+          },
+          "type": {
+            "tags": [
+              {
+                "id": "minecraft:is_player_attack",
+                "expected": true
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

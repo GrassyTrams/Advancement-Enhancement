@@ -1,0 +1,35 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:blaze_rod",
+      "count": 1
+    },
+    "title": {
+      "translate": "advancements.nether.obtain_blaze_rod.title"
+    },
+    "description": {
+      "translate": "advancements.nether.obtain_blaze_rod.description"
+    },
+    "show_toast": false,
+    "announce_to_chat": false
+  },
+  "parent": "minecraft:story/enter_the_nether",
+  "criteria": {
+    "blaze_rod": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:blaze_rod"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "blaze_rod"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

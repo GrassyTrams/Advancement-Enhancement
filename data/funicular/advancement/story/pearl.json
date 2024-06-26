@@ -1,0 +1,25 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:ender_eye"
+    },
+    "title": "Eye Spy",
+    "description": "Craft an Eye of Ender using an Ender Pearl and Blaze Rod Powder",
+    "frame": "task",
+    "announce_to_chat": true
+  },
+  "parent": "funicular:story/blaze_rod",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": [],
+        "items": [
+          {
+            "items": "minecraft:ender_eye"
+          }
+        ]
+      }
+    }
+  }
+}

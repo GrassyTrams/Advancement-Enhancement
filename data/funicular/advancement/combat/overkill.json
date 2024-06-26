@@ -1,0 +1,34 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:diamond_sword"
+    },
+    "title": "Overkill",
+    "description": "Deal twelve hearts of damage in a single melee blow",
+    "frame": "challenge",
+    "announce_to_chat": true
+  },
+  "parent": "minecraft:story/enchant_item",
+  "criteria": {
+    "overkill": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": [],
+        "damage": {
+          "dealt": {
+            "min": 24.0,
+            "max": 999.0
+          },
+          "type": {
+            "tags": [
+              {
+                "id": "minecraft:is_player_attack",
+                "expected": true
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

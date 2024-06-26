@@ -1,0 +1,22 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:heart_of_the_sea"
+    },
+    "title": "Moskstraumen",
+    "description": "Construct a Conduit in the ocean",
+    "frame": "goal"
+  },
+  "parent": "funicular:adventure/nine_seas",
+  "criteria": {
+    "conduit_power": {
+      "trigger": "minecraft:effects_changed",
+      "conditions": {
+        "player": [],
+        "effects": {
+          "minecraft:conduit_power": {}
+        }
+      }
+    }
+  }
+}

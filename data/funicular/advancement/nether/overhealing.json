@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:splash_potion",
+      "components": {
+        "minecraft:potion_contents": {
+          "potion": "minecraft:healing"
+        }
+      }
+    },
+    "title": "Overhealing",
+    "description": "Kill a zombie with healing potions",
+    "frame": "goal",
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "minecraft:nether/brew_potion",
+  "criteria": {
+    "kill_magic": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:zombie"
+        },
+        "killing_blow": {
+          "direct_entity": {
+            "type": "minecraft:potion"
+          }
+        }
+      }
+    }
+  }
+}

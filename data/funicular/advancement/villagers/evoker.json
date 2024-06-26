@@ -1,0 +1,22 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:totem_of_undying"
+    },
+    "title": "Feeling Ill",
+    "description": "Defeat an Evoker in a Woodland Mansion",
+    "frame": "goal"
+  },
+  "parent": "funicular:villagers/sign_of_evil",
+  "criteria": {
+    "evoker": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "entity": {
+          "type": "evoker",
+          "location": {}
+        }
+      }
+    }
+  }
+}

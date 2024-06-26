@@ -1,0 +1,28 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:bookshelf"
+    },
+    "title": "Librarian",
+    "description": "Obtain 15 bookshelves for powerful enchantments.",
+    "frame": "goal",
+    "announce_to_chat": true
+  },
+  "parent": "minecraft:story/enchant_item",
+  "criteria": {
+    "": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:bookshelf",
+            "count": {
+              "min": 15,
+              "max": 64
+            }
+          }
+        ]
+      }
+    }
+  }
+}

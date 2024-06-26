@@ -1,0 +1,30 @@
+{
+  "parent": "",
+  "criteria": {
+    "crafter_crafted_crafter": {
+      "conditions": {
+        "recipe_id": "minecraft:crafter"
+      },
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "display": {
+    "frame": "goal",
+    "description": {
+      "translate": "advancements.adventure.crafters_crafting_crafters.description"
+    },
+    "icon": {
+      "count": 1,
+      "id": "minecraft:crafter"
+    },
+    "title": {
+      "translate": "advancements.adventure.crafters_crafting_crafters.title"
+    }
+  },
+  "requirements": [
+    [
+      "crafter_crafted_crafter"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

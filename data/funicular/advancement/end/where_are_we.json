@@ -1,0 +1,42 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:emerald"
+    },
+    "title": "Where Are We?",
+    "description": "Defend a village from a raid in the end.",
+    "frame": "challenge"
+  },
+  "parent": "minecraft:end/kill_dragon",
+  "criteria": {
+    "start_raid": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "location": {
+            "dimension": "minecraft:the_end"
+          },
+          "effects": {
+            "minecraft:bad_omen": {}
+          }
+        }
+      }
+    },
+    "end_raid": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "location": {
+            "dimension": "minecraft:the_end"
+          },
+          "effects": {
+            "minecraft:hero_of_the_village": {}
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "experience": 1000
+  }
+}

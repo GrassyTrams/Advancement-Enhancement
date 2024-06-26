@@ -1,0 +1,22 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:cactus"
+    },
+    "title": "From Mali to Egypt",
+    "description": "Ride a Camel"
+  },
+  "parent": "funicular:friends/saddle_up",
+  "criteria": {
+    "tamed_animal": {
+      "trigger": "minecraft:started_riding",
+      "conditions": {
+        "player": {
+          "vehicle": {
+            "type": "minecraft:camel"
+          }
+        }
+      }
+    }
+  }
+}

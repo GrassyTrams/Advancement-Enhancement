@@ -1,0 +1,20 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:saddle"
+    },
+    "title": "Saddle Up",
+    "description": "Tame a horse by jumping on it over and over again"
+  },
+  "parent": "minecraft:husbandry/tame_an_animal",
+  "criteria": {
+    "tamed_animal": {
+      "trigger": "minecraft:tame_animal",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:horse"
+        }
+      }
+    }
+  }
+}

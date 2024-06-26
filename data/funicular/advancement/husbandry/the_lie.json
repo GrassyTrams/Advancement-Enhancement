@@ -1,0 +1,19 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:cake"
+    },
+    "title": "The Lie",
+    "description": "Wheat, sugar, milk and eggs!",
+    "frame": "goal"
+  },
+  "parent": "funicular:husbandry/cookie",
+  "criteria": {
+    "cake": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipe_id": "minecraft:cake"
+      }
+    }
+  }
+}

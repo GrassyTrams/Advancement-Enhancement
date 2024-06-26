@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:name_tag"
+    },
+    "title": "Im Naming You...",
+    "description": "Obtain a name tag.",
+    "frame": "task"
+  },
+  "parent": "funicular:story/anvil",
+  "criteria": {
+    "nametag": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:name_tag"
+          }
+        ]
+      }
+    }
+  }
+}

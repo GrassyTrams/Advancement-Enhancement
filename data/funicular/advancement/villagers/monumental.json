@@ -1,0 +1,28 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:dark_prismarine"
+    },
+    "title": "Monumental",
+    "description": "Find an Ocean Monument"
+  },
+  "parent": "funicular:villagers/treasure_map",
+  "criteria": {
+    "monument": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "structures": "#minecraft:on_ocean_explorer_maps"
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

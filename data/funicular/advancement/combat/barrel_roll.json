@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:barrel"
+    },
+    "title": "Do a Barrel Roll!",
+    "description": "Get riptide on a trident",
+    "frame": "goal"
+  },
+  "parent": "minecraft:story/enchant_item",
+  "criteria": {
+    "riptide": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:trident",
+            "predicates": {
+              "minecraft:enchantments": [
+                {
+                  "enchantments": "minecraft:riptide"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

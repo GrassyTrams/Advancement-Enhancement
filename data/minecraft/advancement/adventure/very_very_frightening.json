@@ -1,0 +1,39 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:trident"
+    },
+    "title": {
+      "translate": "advancements.adventure.very_very_frightening.title"
+    },
+    "description": {
+      "translate": "advancements.adventure.very_very_frightening.description"
+    },
+    "frame": "goal"
+  },
+  "parent": "funicular:combat/barrel_roll",
+  "criteria": {
+    "struck_villager": {
+      "trigger": "minecraft:channeled_lightning",
+      "conditions": {
+        "victims": [
+          [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "minecraft:villager"
+              }
+            }
+          ]
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "struck_villager"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

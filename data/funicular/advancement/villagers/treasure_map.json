@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:filled_map"
+    },
+    "title": "Treasure Hunter",
+    "description": "Trade for an Explorer Map",
+    "frame": "goal"
+  },
+  "parent": "funicular:villagers/root",
+  "criteria": {
+    "trade": {
+      "trigger": "minecraft:villager_trade",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:filled_map"
+          ]
+        }
+      }
+    }
+  }
+}

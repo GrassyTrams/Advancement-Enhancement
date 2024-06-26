@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:wolf_armor"
+    },
+    "title": "Extra Protection",
+    "description": "Obtain wolf armor using armadillo scutes",
+    "frame": "goal"
+  },
+  "parent": "minecraft:husbandry/tame_an_animal",
+  "criteria": {
+    "wolf_armour": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:wolf_armor"
+          }
+        ]
+      }
+    }
+  }
+}

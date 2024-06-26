@@ -1,0 +1,39 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:cooked_cod"
+    },
+    "title": "Delicious Fish",
+    "description": "Cook and eat a fish!",
+    "announce_to_chat": false
+  },
+  "parent": "minecraft:husbandry/fishy_business",
+  "criteria": {
+    "cooked_cod": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:cooked_cod"
+          ]
+        }
+      }
+    },
+    "cooked_salmon": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:cooked_salmon"
+          ]
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "cooked_cod",
+      "cooked_salmon"
+    ]
+  ]
+}

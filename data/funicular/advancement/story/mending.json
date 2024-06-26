@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:enchanted_book"
+    },
+    "title": "Amending",
+    "description": "Obtain or create a piece of gear with mending",
+    "frame": "challenge",
+    "hidden": true
+  },
+  "parent": "funicular:story/nametag",
+  "criteria": {
+    "nametag": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "predicates": {
+              "minecraft:enchantments": [
+                {
+                  "enchantments": "minecraft:mending"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

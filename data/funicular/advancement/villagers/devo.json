@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:jungle_log"
+    },
+    "title": "Devolution",
+    "description": "Trade with a swamp and jungle villager",
+    "frame": "challenge"
+  },
+  "parent": "funicular:villagers/haggler",
+  "criteria": {
+    "jungle": {
+      "trigger": "minecraft:villager_trade",
+      "conditions": {
+        "villager": {
+          "nbt": "{VillagerData:{type:\"minecraft:jungle\"}}"
+        }
+      }
+    },
+    "swamp": {
+      "trigger": "minecraft:villager_trade",
+      "conditions": {
+        "villager": {
+          "nbt": "{VillagerData:{type:\"minecraft:swamp\"}}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "experience": 500
+  }
+}

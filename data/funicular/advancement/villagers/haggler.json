@@ -1,0 +1,28 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:bundle"
+    },
+    "title": "The Haggler",
+    "description": "Get 30 emeralds",
+    "frame": "task"
+  },
+  "parent": "funicular:villagers/root",
+  "criteria": {
+    "emeralds": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:emerald"
+            ],
+            "count": {
+              "min": 30
+            }
+          }
+        ]
+      }
+    }
+  }
+}

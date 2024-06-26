@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:saddle"
+    },
+    "title": "Pigs Flying",
+    "description": "Ride a levitating pig",
+    "frame": "challenge"
+  },
+  "parent": "minecraft:end/levitate",
+  "criteria": {
+    "PigFly": {
+      "trigger": "minecraft:started_riding",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "vehicle": {
+                "type": "minecraft:pig",
+                "effects": {
+                  "minecraft:levitation": {}
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}
