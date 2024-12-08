@@ -1,11 +1,11 @@
 {
   "display": {
     "icon": {
-      "id": "minecraft:wooden_hoe",
+      "id": "minecraft:iron_hoe",
       "count": 1
     },
     "title": {
-      "translate": "advancements.husbandry.root.title"
+      "translate": "Time to Farm!"
     },
     "description": "The world is full of food",
     "background": "minecraft:textures/gui/advancements/backgrounds/husbandry.png",

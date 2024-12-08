@@ -15,7 +15,7 @@
     },
     "icon": {
       "count": 1,
-      "id": "minecraft:map"
+      "id": "minecraft:filled_map"
     },
     "show_toast": false,
     "title": {

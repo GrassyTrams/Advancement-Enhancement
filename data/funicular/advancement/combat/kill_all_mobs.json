@@ -3,7 +3,7 @@
     "icon": {
       "id": "minecraft:netherite_sword"
     },
-    "title": "Monsters Slayed",
+    "title": "Monsters Slain",
     "description": "Kill all hostile monsters at least once",
     "frame": "challenge"
   },
