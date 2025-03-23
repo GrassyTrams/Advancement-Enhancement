@@ -5,7 +5,7 @@
     },
     "title": "Villagers",
     "description": "Successfully trade with a Villager ",
-    "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png",
+    "background": "minecraft:gui/advancements/backgrounds/adventure",
     "frame": "task",
     "show_toast": false,
     "announce_to_chat": false

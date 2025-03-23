@@ -8,7 +8,7 @@
       "translate": "Time to Farm!"
     },
     "description": "The world is full of food",
-    "background": "minecraft:textures/gui/advancements/backgrounds/husbandry.png",
+    "background": "minecraft:gui/advancements/backgrounds/husbandry",
     "show_toast": false,
     "announce_to_chat": false
   },
